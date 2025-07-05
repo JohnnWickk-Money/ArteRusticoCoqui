@@ -4,7 +4,7 @@ import {
   Phone, 
   Mail, 
   MessageCircle, 
-  Instagram,
+  Facebook,
   Hammer,
   Palette,
   Shield,
@@ -44,10 +44,10 @@ function App() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
               <Hammer className={`h-8 w-8 transition-colors duration-300 ${
-                isScrolled ? 'text-blue-900' : 'text-white'
+                isScrolled ? 'text-amber-800' : 'text-white'
               }`} />
               <span className={`text-xl font-bold transition-colors duration-300 ${
-                isScrolled ? 'text-blue-900' : 'text-white'
+                isScrolled ? 'text-amber-800' : 'text-white'
               }`}>
                 Arte Rústico Carpintería
               </span>
@@ -72,12 +72,12 @@ function App() {
 
       {/* Hero Section */}
       <section id="inicio" className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-900 via-blue-800 to-green-800"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-amber-900 via-amber-800 to-yellow-800"></div>
         <div className="absolute inset-0 bg-black opacity-40"></div>
         
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
-            Arte Rústico <span className="text-amber-400">Carpintería</span>
+            Arte Rústico <span className="text-amber-300">Carpintería</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-200 animate-fade-in-delayed">
             Tradición, calidad y arte en cada pieza de madera
@@ -90,13 +90,13 @@ function App() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button 
               onClick={() => scrollToSection('servicios')}
-              className="bg-amber-500 hover:bg-amber-600 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+              className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
             >
               Ver Servicios
             </button>
             <button 
               onClick={() => scrollToSection('galería')}
-              className="border-2 border-white text-white hover:bg-white hover:text-blue-900 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105"
+              className="border-2 border-white text-white hover:bg-white hover:text-amber-900 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105"
             >
               Ver Trabajos
             </button>
@@ -109,11 +109,11 @@ function App() {
       </section>
 
       {/* Acerca de Section */}
-      <section id="acerca-de" className="py-20 bg-gray-50">
+      <section id="acerca-de" className="py-20 bg-stone-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <h2 className="text-4xl font-bold text-blue-900 mb-6">
+              <h2 className="text-4xl font-bold text-amber-900 mb-6">
                 Maestro en el Arte de la Madera
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed">
@@ -128,7 +128,7 @@ function App() {
               </p>
               <div className="flex items-center space-x-4 pt-4">
                 <div className="flex items-center space-x-2">
-                  <Award className="h-6 w-6 text-amber-500" />
+                  <Award className="h-6 w-6 text-amber-600" />
                   <span className="text-gray-700 font-medium">Métodos Tradicionales</span>
                 </div>
                 <div className="flex items-center space-x-2">
@@ -139,23 +139,23 @@ function App() {
             </div>
             
             <div className="relative">
-              <div className="bg-gradient-to-br from-blue-900 to-green-800 rounded-lg p-8 text-white">
+              <div className="bg-gradient-to-br from-amber-900 to-yellow-800 rounded-lg p-8 text-white">
                 <h3 className="text-2xl font-bold mb-4">Filosofía de Trabajo</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start space-x-2">
-                    <Star className="h-5 w-5 text-amber-400 mt-0.5" />
+                    <Star className="h-5 w-5 text-amber-300 mt-0.5" />
                     <span>Respeto por las técnicas ancestrales</span>
                   </li>
                   <li className="flex items-start space-x-2">
-                    <Star className="h-5 w-5 text-amber-400 mt-0.5" />
+                    <Star className="h-5 w-5 text-amber-300 mt-0.5" />
                     <span>Selección cuidadosa de maderas nobles</span>
                   </li>
                   <li className="flex items-start space-x-2">
-                    <Star className="h-5 w-5 text-amber-400 mt-0.5" />
+                    <Star className="h-5 w-5 text-amber-300 mt-0.5" />
                     <span>Atención personalizada en cada proyecto</span>
                   </li>
                   <li className="flex items-start space-x-2">
-                    <Star className="h-5 w-5 text-amber-400 mt-0.5" />
+                    <Star className="h-5 w-5 text-amber-300 mt-0.5" />
                     <span>Compromiso con la calidad y durabilidad</span>
                   </li>
                 </ul>
@@ -169,7 +169,7 @@ function App() {
       <section id="servicios" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-blue-900 mb-4">
+            <h2 className="text-4xl font-bold text-amber-900 mb-4">
               Nuestros Servicios
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -203,12 +203,12 @@ function App() {
             ].map((service, index) => (
               <div 
                 key={index}
-                className="bg-gray-50 p-8 rounded-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group"
+                className="bg-stone-50 p-8 rounded-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group"
               >
-                <div className="text-blue-900 mb-4 group-hover:text-amber-500 transition-colors duration-300">
+                <div className="text-amber-900 mb-4 group-hover:text-amber-600 transition-colors duration-300">
                   {service.icon}
                 </div>
-                <h3 className="text-xl font-bold text-blue-900 mb-3">{service.title}</h3>
+                <h3 className="text-xl font-bold text-amber-900 mb-3">{service.title}</h3>
                 <p className="text-gray-600 leading-relaxed">{service.description}</p>
               </div>
             ))}
@@ -217,21 +217,21 @@ function App() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-900 to-green-800">
+      <section className="py-20 bg-gradient-to-r from-amber-900 to-yellow-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8 text-center text-white">
             <div className="transform hover:scale-105 transition-transform duration-300">
-              <div className="text-5xl font-bold text-amber-400 mb-2">+10</div>
+              <div className="text-5xl font-bold text-amber-300 mb-2">+10</div>
               <div className="text-xl font-semibold mb-1">Años de Experiencia</div>
               <div className="text-gray-300">Perfeccionando nuestro arte</div>
             </div>
             <div className="transform hover:scale-105 transition-transform duration-300">
-              <div className="text-5xl font-bold text-amber-400 mb-2">100%</div>
+              <div className="text-5xl font-bold text-amber-300 mb-2">100%</div>
               <div className="text-xl font-semibold mb-1">Garantía de Calidad</div>
               <div className="text-gray-300">En cada trabajo realizado</div>
             </div>
             <div className="transform hover:scale-105 transition-transform duration-300">
-              <div className="text-5xl font-bold text-amber-400 mb-2">+500</div>
+              <div className="text-5xl font-bold text-amber-300 mb-2">+500</div>
               <div className="text-xl font-semibold mb-1">Clientes Satisfechos</div>
               <div className="text-gray-300">Que confían en nuestro trabajo</div>
             </div>
@@ -240,10 +240,10 @@ function App() {
       </section>
 
       {/* Gallery Section */}
-      <section id="galería" className="py-20 bg-gray-50">
+      <section id="galería" className="py-20 bg-stone-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-blue-900 mb-4">
+            <h2 className="text-4xl font-bold text-amber-900 mb-4">
               Galería de Trabajos
             </h2>
             <p className="text-xl text-gray-600">
@@ -309,7 +309,7 @@ function App() {
       <section id="contacto" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-blue-900 mb-4">
+            <h2 className="text-4xl font-bold text-amber-900 mb-4">
               Contacto
             </h2>
             <p className="text-xl text-gray-600">
@@ -318,47 +318,47 @@ function App() {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center p-8 bg-gray-50 rounded-lg hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-              <div className="bg-blue-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="text-center p-8 bg-stone-50 rounded-lg hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+              <div className="bg-amber-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Phone className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-blue-900 mb-2">Teléfono</h3>
-              <p className="text-gray-600">+54 9 11 1234-5678</p>
+              <h3 className="text-xl font-bold text-amber-900 mb-2">Teléfono</h3>
+              <p className="text-gray-600">+54 9 3329 61-9790</p>
             </div>
             
-            <div className="text-center p-8 bg-gray-50 rounded-lg hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+            <div className="text-center p-8 bg-stone-50 rounded-lg hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
               <div className="bg-green-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <MessageCircle className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-blue-900 mb-2">WhatsApp</h3>
-              <p className="text-gray-600">+54 9 11 1234-5678</p>
+              <h3 className="text-xl font-bold text-amber-900 mb-2">WhatsApp</h3>
+              <p className="text-gray-600">+54 9 3329 61-9790</p>
             </div>
             
-            <div className="text-center p-8 bg-gray-50 rounded-lg hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+            <div className="text-center p-8 bg-stone-50 rounded-lg hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
               <div className="bg-red-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Mail className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-blue-900 mb-2">Email</h3>
-              <p className="text-gray-600">arterustico@carpinteria.com</p>
+              <h3 className="text-xl font-bold text-amber-900 mb-2">Email</h3>
+              <p className="text-gray-600">coquinlobato@gmail.com</p>
             </div>
             
-            <div className="text-center p-8 bg-gray-50 rounded-lg hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-              <div className="bg-purple-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Instagram className="h-8 w-8 text-white" />
+            <div className="text-center p-8 bg-stone-50 rounded-lg hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+              <div className="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Facebook className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-blue-900 mb-2">Instagram</h3>
-              <p className="text-gray-600">@arterustico_carpinteria</p>
+              <h3 className="text-xl font-bold text-amber-900 mb-2">Facebook</h3>
+              <p className="text-gray-600">Coqui Loba Carpin</p>
             </div>
           </div>
           
           <div className="mt-12 text-center">
-            <div className="bg-gradient-to-r from-blue-900 to-green-800 text-white p-8 rounded-lg">
+            <div className="bg-gradient-to-r from-amber-900 to-yellow-800 text-white p-8 rounded-lg">
               <h3 className="text-2xl font-bold mb-4">¿Listo para comenzar tu proyecto?</h3>
               <p className="text-lg mb-6">
                 Contáctanos para recibir una consulta personalizada y un presupuesto sin compromiso
               </p>
               <div className="flex items-center justify-center space-x-2">
-                <Clock className="h-5 w-5 text-amber-400" />
+                <Clock className="h-5 w-5 text-amber-300" />
                 <span>Horario de atención: Lunes a Viernes 8:00 - 18:00</span>
               </div>
             </div>
@@ -367,12 +367,12 @@ function App() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-blue-900 text-white py-12">
+      <footer className="bg-amber-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <Hammer className="h-8 w-8 text-amber-400" />
+                <Hammer className="h-8 w-8 text-amber-300" />
                 <span className="text-2xl font-bold">Arte Rústico Carpintería</span>
               </div>
               <p className="text-gray-300">
@@ -394,8 +394,8 @@ function App() {
             <div>
               <h4 className="text-lg font-bold mb-4">Contacto</h4>
               <div className="space-y-2 text-gray-300">
-                <p>📱 +54 9 11 1234-5678</p>
-                <p>📧 arterustico@carpinteria.com</p>
+                <p>📱 +54 9 3329 61-9790</p>
+                <p>📧 coquinlobato@gmail.com</p>
                 <p>📍 Buenos Aires, Argentina</p>
               </div>
             </div>
