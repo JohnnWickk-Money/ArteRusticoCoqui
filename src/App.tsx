@@ -49,7 +49,7 @@ function App() {
               <span className={`text-xl font-bold transition-colors duration-300 ${
                 isScrolled ? 'text-blue-900' : 'text-white'
               }`}>
-                Carpintería Rústica
+                Arte Rústico Carpintería
               </span>
             </div>
             
@@ -77,7 +77,7 @@ function App() {
         
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
-            Carpintería <span className="text-amber-400">Rústica</span>
+            Arte Rústico <span className="text-amber-400">Carpintería</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-200 animate-fade-in-delayed">
             Tradición, calidad y arte en cada pieza de madera
@@ -339,7 +339,7 @@ function App() {
                 <Mail className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-xl font-bold text-blue-900 mb-2">Email</h3>
-              <p className="text-gray-600">carpinteria@rustica.com</p>
+              <p className="text-gray-600">arterustico@carpinteria.com</p>
             </div>
             
             <div className="text-center p-8 bg-gray-50 rounded-lg hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
@@ -347,7 +347,7 @@ function App() {
                 <Instagram className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-xl font-bold text-blue-900 mb-2">Instagram</h3>
-              <p className="text-gray-600">@carpinteria_rustica</p>
+              <p className="text-gray-600">@arterustico_carpinteria</p>
             </div>
           </div>
           
@@ -373,7 +373,7 @@ function App() {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <Hammer className="h-8 w-8 text-amber-400" />
-                <span className="text-2xl font-bold">Carpintería Rústica</span>
+                <span className="text-2xl font-bold">Arte Rústico Carpintería</span>
               </div>
               <p className="text-gray-300">
                 Tradición y calidad en cada pieza. Especialistas en métodos tradicionales 
@@ -395,14 +395,14 @@ function App() {
               <h4 className="text-lg font-bold mb-4">Contacto</h4>
               <div className="space-y-2 text-gray-300">
                 <p>📱 +54 9 11 1234-5678</p>
-                <p>📧 carpinteria@rustica.com</p>
+                <p>📧 arterustico@carpinteria.com</p>
                 <p>📍 Buenos Aires, Argentina</p>
               </div>
             </div>
           </div>
           
           <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 Carpintería Rústica. Todos los derechos reservados.</p>
+            <p>&copy; 2024 Arte Rústico Carpintería. Todos los derechos reservados.</p>
           </div>
         </div>
       </footer>
